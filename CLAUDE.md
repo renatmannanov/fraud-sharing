@@ -78,7 +78,13 @@ uid = uuid.uuid4()
 uid = sha256(phone_hash)
 ```
 
-### 4. Better a duplicate than a false merge
+### 4. Keep directories clean
+- Never dump temp/generated files into folder roots — use dedicated subfolders
+- `docs/` structure: topic-based subfolders (e.g. `docs/estaff_api/`, `docs/knowledge/`)
+- `scripts/` — utility scripts, explorers, one-off tools
+- Temp files (PNGs from PDF, intermediate JSON) — delete after use or move to proper subfolder
+
+### 5. Better a duplicate than a false merge
 If matching score is low → create new candidate.
 Duplicates can be merged later. False merges corrupt data permanently.
 
