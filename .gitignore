@@ -1,0 +1,33 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs (internal plans, specs, knowledge base)
+docs/
+
+# Data files (may contain PII)
+*.csv
+*.xlsx
+*.xls
+data/
+
+# Docker
+docker-compose.override.yml
